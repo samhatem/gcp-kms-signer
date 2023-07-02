@@ -65,12 +65,12 @@ class KmsManager {
 
     keyPathOptions: KeyPathOptions;
 
-    rpcEndpoints: string[]
+    rpcEndpoint: string
 
-    constructor(keyPathOptions: KeyPathOptions, rpcEndpoints: string[], kmsClientOpts?: ClientOptions) {
+    constructor(keyPathOptions: KeyPathOptions, rpcEndpoint: string, kmsClientOpts?: ClientOptions) {
         this.kmsClient = new KeyManagementServiceClient(kmsClientOpts);
         this.keyPathOptions = keyPathOptions;
-        this.rpcEndpoints = rpcEndpoints;
+        this.rpcEndpoint = rpcEndpoint;
     }
 
     getKmsSigner(versionId: string): KmsSigner {
@@ -85,7 +85,7 @@ class KmsManager {
         return new KmsSigner(
             this.kmsClient,
             versionName,
-            this.rpcEndpoints,
+            this.rpcEndpoint,
         );
     }
 }

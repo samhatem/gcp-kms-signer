@@ -24,7 +24,7 @@ class KmsSigner extends Signer {
 
     keyName: string;
 
-    provider: JsonRpcMultiProvider;
+    provider: JsonRpcProvider;
 
     publicKey: Uint8Array | undefined;
 

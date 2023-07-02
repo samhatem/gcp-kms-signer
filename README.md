@@ -1,6 +1,6 @@
 # KMS Signer
 
-A somewhat complete library for using Google KMS with Ethers.js.
+A not very complete library for using Google KMS with Ethers.js. Signing stuff works. I started building out logic for managing different keys on GCP and never got around to finishing it.
 
 Tests are currently set up with a GCP account that no longer exists so the test file will need to be updated to be run.
 
