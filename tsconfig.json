@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "lib",
+    "lib": ["dom"],
+    "sourceMap": false,
+    "allowJs": false,
+    "declaration": true,
+    "declarationDir": "lib",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "resolveJsonModule": true,
+    "typeRoots": ["src/types/fast-crc32c/index.d.ts"],
+    "types": ["node", "mocha"]
+  },
+  "include": ["src", "test", "src/types/fast-crc32c/index.d.ts"],
+  "exclude": ["node_modules", "lib"],
+  "files": [
+    "src/types/fast-crc32c/index.d.ts"
+  ]
+}
